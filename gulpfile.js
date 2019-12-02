@@ -22,7 +22,7 @@ function bs() {
         }
     });
 
-    gulp.watch("src/sass/*.sass").on('change', sassTask);
+    gulp.watch("src/sass/**/*.sass").on('change', sassTask);
 
     gulp.watch("src/*.html").on('change', browserSync.reload);
     gulp.watch("src/css/*.css").on('change', browserSync.reload);
@@ -32,10 +32,9 @@ function bs() {
 };
 
 function sassTask() {
-    return gulp.src('src/sass/*.sass')
+    return gulp.src('src/sass/**/*.sass')
     .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(concat('style.css'))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('src/css'))
