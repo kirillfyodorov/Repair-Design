@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'FuturaDemiC';
+    src: url('FuturaDemiC.eot');
+    src: url('FuturaDemiC.eot?#iefix') format('embedded-opentype'),
+        url('FuturaDemiC.woff2') format('woff2'),
+        url('FuturaDemiC.ttf') format('truetype'),
+        url('FuturaDemiC.svg#FuturaDemiC') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
