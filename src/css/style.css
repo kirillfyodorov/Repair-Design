@@ -333,7 +333,12 @@ template {
 
 .header {
   padding: 24px 0px;
-  background-color: #131313; }
+  background-color: #131313;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; }
 
 .menu {
   display: flex;
@@ -360,18 +365,20 @@ template {
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #fff;
-  position: relative; }
+  position: relative;
+  padding-top: 100px; }
   .hero__instagram {
     max-width: 80px;
     position: absolute;
-    left: 0; }
+    left: 0;
+    top: 0;
+    height: 100%; }
 
 .instagram {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #131313;
-  height: 100%; }
+  background-color: #131313; }
   .instagram__link {
     text-transform: uppercase;
     color: #E3B873;
